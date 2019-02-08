@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>支付宝</title>
+    <!-- 移动端rem布局 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" id="vp" />
+    <script type="text/javascript">
+        // 把尺寸放大N倍（N是window.devicePixelRatio）
+        var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+        //物理像素*设备像素比=真实像素
+        document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+        // 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+        var scale = 1/window.devicePixelRatio;
+        var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+        document.getElementById("vp").content = mstr;
+    </script>
+    <!-- 引入结束 -->
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+    <!-- 兼容代码 -->
+    <script src="js/html5shiv.min.js"></script>
+    <!-- 兼容代码结束 -->
+    <div id="zfb">
+        <header id="header">
+            <a href="#" class="header_l fl">
+                <i class="iconfont icon-icon--"></i>
+                <span>账单</span>
+            </a>
+            <ul class="fr">
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-wode"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-sousuo"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-jia"></i>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main id="container">
+            <article class="con_t">
+                <a href="#">
+                    <i class="iconfont icon-saoyisao"></i>
+                    <span>扫一扫</span>
+                </a>
+                <a href="#">
+                    <i class="iconfont icon-fukuan"></i>
+                    <span>付款</span>
+                </a>
+                <a href="#">
+                    <i class="iconfont icon-18"><b>新</b></i>
+                    <span>卡券</span>
+                </a>
+                <a href="#">
+                    <i class="xyx"></i>
+                    <span>咻一咻</span>
+                </a>
+            </article>
+            <ul class="con_c">
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-zhuanzhang"></i>
+                        <span>转账</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-hongbao"></i>
+                        <span>红包</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-icon"></i>
+                        <span>余额宝</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-shoujichongzhi"></i>
+                        <span>手机充值</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-xinyongqiahuankuan"></i>
+                        <span>信用卡还款</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-logo"></i>
+                        <span>芝麻信用</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-didichuhang"></i>
+                        <span>滴滴出行</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-dianyingpiao"></i>
+                        <span>淘票票</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-mayihuabei"></i>
+                        <span>蚂蚁聚宝</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-waimai-"></i>
+                        <span>外卖</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-tianmaot"></i>
+                        <span>天猫</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-shenghuojiaofei"></i>
+                        <span>生活缴费</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="con_ban"></div>
+            <ul class="con_c">
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-zhuanzhang"></i>
+                        <span>转账</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-hongbao"></i>
+                        <span>红包</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-icon"></i>
+                        <span>余额宝</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-shoujichongzhi"></i>
+                        <span>手机充值</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-xinyongqiahuankuan"></i>
+                        <span>信用卡还款</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-logo"></i>
+                        <span>芝麻信用</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-didichuhang"></i>
+                        <span>滴滴出行</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-dianyingpiao"></i>
+                        <span>淘票票</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-mayihuabei"></i>
+                        <span>蚂蚁聚宝</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-waimai-"></i>
+                        <span>外卖</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-tianmaot"></i>
+                        <span>天猫</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-shenghuojiaofei"></i>
+                        <span>生活缴费</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="con_c">
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-zhuanzhang"></i>
+                        <span>转账</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-hongbao"></i>
+                        <span>红包</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-icon"></i>
+                        <span>余额宝</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-shoujichongzhi"></i>
+                        <span>手机充值</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-xinyongqiahuankuan"></i>
+                        <span>信用卡还款</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-logo"></i>
+                        <span>芝麻信用</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-didichuhang"></i>
+                        <span>滴滴出行</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-dianyingpiao"></i>
+                        <span>淘票票</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-mayihuabei"></i>
+                        <span>蚂蚁聚宝</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-waimai-"></i>
+                        <span>外卖</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-tianmaot"></i>
+                        <span>天猫</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-shenghuojiaofei"></i>
+                        <span>生活缴费</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="con_c">
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-zhuanzhang"></i>
+                        <span>转账</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-hongbao"></i>
+                        <span>红包</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-icon"></i>
+                        <span>余额宝</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-shoujichongzhi"></i>
+                        <span>手机充值</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-xinyongqiahuankuan"></i>
+                        <span>信用卡还款</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-logo"></i>
+                        <span>芝麻信用</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-didichuhang"></i>
+                        <span>滴滴出行</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-dianyingpiao"></i>
+                        <span>淘票票</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-mayihuabei"></i>
+                        <span>蚂蚁聚宝</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-waimai-"></i>
+                        <span>外卖</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-tianmaot"></i>
+                        <span>天猫</span>
+                    </a>
+                </li>
+                <li style="border-right:0 none;">
+                    <a href="#">
+                        <i class="iconfont icon-shenghuojiaofei"></i>
+                        <span>生活缴费</span>
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <footer id="footer">
+            <a href="#" class="current">
+                <i class="iconfont icon-zhifubao"></i>
+                <span>支付宝</span>
+            </a>
+            <a href="#">
+                <i class="iconfont icon-koubei"><s></s></i>
+                <span>口碑</span>
+            </a>
+            <a href="#">
+                <i class="iconfont icon-pengyou"><b>2</b></i>
+                <span>朋友</span>
+            </a>
+            <a href="#">
+                <i class="iconfont icon-qian"></i>
+                <span>我的</span>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
